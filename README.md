@@ -1,5 +1,4 @@
 CellMatrix
-
 ===
 
 A two dimensional cellular automata simulator.
@@ -26,16 +25,16 @@ CellMatrix model can be passed into different "strategy", to define how cell evo
 In `org.accela.cellmatrix.strategy/`, there are multiple strategies to choose:
 
 * EvolveStrategy
-** BasicEvolveStrategy
-** PopuEvolveStrategy
+    * BasicEvolveStrategy
+    * PopuEvolveStrategy
 
 * ColorStrategy
-** BasicColorStrategy
-** PopuColorStrategy
+    * BasicColorStrategy
+    * PopuColorStrategy
 
 * ClickStrategy
-** BasicClickStrategy
-** PopuClickStrategy
+    * BasicClickStrategy
+    * PopuClickStrategy
 
 `org.accela.cellmatrix.Main` is the program entry, where you'll see
 
@@ -44,5 +43,5 @@ CellMatrix model = new CellMatrix(WIDTH, HEIGHT, new PopuEvolveStrategy());
 CellPanel cellPanel = new CellPanel(model, new PopuColorStrategy(), new PopuClickStrategy());
 ```
 
-`CellMatrix model` defines the logic model and `CellPanel cellPanel` defines how to display. The arguments are customizable, i.e. choose different strategies. You can also write your own ones.
+`CellMatrix model` defines the logic model and `CellPanel cellPanel` defines how to display. The arguments are customizable, i.e. to choose different strategies. You can also write your own ones.
 
